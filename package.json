@@ -1,0 +1,31 @@
+{
+  "name": "dsh-devloop",
+  "version": "0.2.0",
+  "description": "DSH 插件开发闭环 CLI：生成骨架、静态自检、同步、安装、状态、日志。也可作为 DSH 插件在对话里直接调用。",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "devloop": "./cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "index.js",
+    "cordis.patch.yml",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "devloop",
+    "cli"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
